@@ -1,0 +1,63 @@
+
+
+/*======================== PARA TODAS LAS PAGiNAS ==========================================================  */
+/* Con esto creo una variable propia de color para todas mis paginas */
+:root {
+    --blanco: #ffffff;
+    --primario: #FFC107;
+    --secundario: #1565ab;
+    --gris: #757575;
+    --oscuro: #212121;
+}
+
+html {
+    /* Para normalizar el valor rem y que nos sirva de referencia*/
+    font-size: 62.5%; 
+    /* box-sizing (tamaño de la caja)
+        border-box (establece en un elemento, el relleno y el borde se incluyen en el ancho y el alto)*/
+    box-sizing: border-box;
+    /*  min-height (Establezca la altura mínima de un elemento) */
+    min-height: 100%;
+    /*  scrol-snap-type (acepta un segundo parámetro que determina si el viewport de nuestro contenido 
+        se debe ajustar a los elementos de forma obligatoria o sólo si está muy próximo de sus bordes.)
+         y mandatory (Al terminar de hacer scroll, el scroll se mueve automáticamente SIEMPRE al 
+         punto de ajuste que se haya determinado. Cuando se cambia el tamaño de la ventana, 
+         se cambia de orientación o se modifica el tamaño, SIEMPRE se moverá para satisfacer esto*/
+    /* scroll-snap-type: y mandatory; */ 
+}
+
+/* con esto hago que todas las cajas (box-sizen) antes y despues tengan un espacio reservado para no pegar nada  */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+p {
+    line-height: 2;
+}
+body {
+    font-size: 16px; /* Con el size de html, y este, 1 rem = 10 px con relación dispositivo */
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    min-height: 100%;
+    
+}
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+h1 span {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+h2 {
+    font-size: 2.4rem;
+}
+h3 {
+    color: var(--secundario);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+/*==================================================================================  */
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='es'> 
+<head>
+    <!-- Formato del la pagina y de los carecateres-->
+	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/> 
+    <!-- Descripcion del contenido en la pagina y palabras claves-->
+	<meta name="Description" CONTENT="Centrales Telefonía, Redes, Informática, Wifi">
+	<title>JGComunicaciones/Contacto</title>
+     <!-- Cargamos el icono de nuestra empresa -->
+     <link rel="icon" href="../img/logo.ico" type="image/x-icon">
+	<!-- cargamos normalize.css para unificar vista en navegadores -->
+	<link rel="preload" href="../css/normalize.css" as="style">
+	<!-- cargamos fuentes de google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
+	 <!--precargamos estilos para acelerar la carga el css de la pagina directamente con el comando "rel=preload"-->
+	<link rel="preload" href="../css/estilos.css" as="style">
+	<!--Vinculamos los estilos contacto.css a esta pagina-->
+	<link href="../css/contacto.css" rel="stylesheet"> 
+    
+</head>
+<body>
+
+    <header>
+        <h1>JGComunicaciones <span>Servicios IT</span></h1>
+    
+    <div class=" nav-bg">
+        <nav class="navegacion contenedor">
+            <a href="../index.html">Inicio</a>
+            <a href="./Nosotros.html">Nosotros</a>
+            <a href="./MisServicios.html">Mis Servicios</a>
+            <a href="./Marcas.html">Marcas</a>
+            <a href="./descargas.html">Descargas</a>
+        </nav>
+    </div>
+    </header>
+
+    
+        <div class="contenedor sombra">
+            <h2>Contacto</h2>
+            <form class="formulario" action="#" method="POST">
+                <legend>Contactános llenando todos los campos</legend>
+
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre</label>
+
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="campo">
+                        <label>Teléfono</label>
+
+                        <input type="tel" name="telefono" placeholder="Teléfono">
+                    </div>
+                    <div class="campo w-100">
+                        <label>Correo</label>
+
+                        <input type="mail" name="correo" placeholder="Mail">
+                    </div>
+                    <div class="campo w-100">
+                        <label>Mensaje:</label>
+
+                        <textarea></textarea>
+                    </div>
+                </div><!--.contenedor-campos-->
+                <div class="enviar">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <p>Todos los derechos reservados. JGComunicaciones</p>
+    </footer>
+
+
+    
+</body>
+</html>
